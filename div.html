@@ -233,10 +233,18 @@
     box-shadow: none !important;
     border: none !important;
   }
+    /* Reset mobile table styles for printing */ 
+    #invoice-table-container { 
+        width: 100% !important; 
+        overflow-x: visible !important; 
+    }
 
   /* Table and cell formatting */
   table {
     border: 1px solid #ddd !important;
+    width: 100% !important; 
+    min-width: 100% !important; 
+    max-width: 100% !important;
   }
   th, td {
     border: 1px solid #ddd !important;
