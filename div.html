@@ -182,11 +182,24 @@
             .client-info, .invoice-meta {
                 margin-bottom: 20px;
             }
-            table {
-            width: 50%;
-            border-collapse: collapse;
-            margin-bottom: 15px;
+            
+            /* Table wrapping for mobile */
+            #invoice-table-container {
+                width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
             }
+            
+            table {
+                min-width: 100%;
+                width: auto;
+            }
+            
+            th, td {
+                white-space: nowrap;
+                padding: 8px 12px;
+            }
+            
             .download-buttons {
             text-align: center;
             margin-top: 30px;
@@ -310,7 +323,7 @@
                 <p>Payment Terms: <input type="text" id="payment-terms" value="Net 15" style="width: 150px;"></p>
             </div>
         </div>
-        <div>
+        <div id="invoice-table-container">
         <table id="invoice-table">
             <thead>
                 <tr>
