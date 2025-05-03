@@ -13,7 +13,7 @@
             color: #333;
         }
         #invoice {
-            width: 85%;
+            width: 95%;
             max-width: 850px;
             margin: 30px auto;
             background-color: #fff;
@@ -67,7 +67,7 @@
             margin-bottom: 30px;
             background: #f8f9fa;
             padding: 15px 20px;
-            align-items: center;
+            align-items: left;
             text-align: left;
             border-radius: 6px;
         }
@@ -97,7 +97,7 @@
             text-align: left;
         }
         td {
-            padding: 12px 15px;
+            padding: 2px 5px;
             border-bottom: 1px solid #eaeaea;
         }
         input[type="text"], input[type="number"] {
@@ -188,9 +188,9 @@
 @media print {
   /* Page layout adjustments */
   body {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
+  padding-top: 0 !important;  /* Removes extra space at the top */
+  margin-top: 0 !important;   /* Ensures content starts at the very top */
+}
   
   /* Invoice container styling */
   #invoice {
@@ -210,7 +210,7 @@
     border: 1px solid #ddd !important;
     line-height: 1.5 !important;
     padding-top: 3px !important;
-    padding-bottom: 3px !important;
+    padding-bottom: 1px !important;
     overflow: visible !important;
     text-overflow: clip !important;
     white-space: normal !important;
